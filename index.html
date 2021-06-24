@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="chat.css" />
+  </head>
+
+  <body>
+    <div id="keywords">
+      <h1>Try the following keywords to get the output results</h1>
+      <ul>
+        <li>Hello</li>
+        <li>How are you?</li>
+        <li>India</li>
+        <li>America</li>
+        <li>Canada</li>
+        <li>goodbye</li>
+      </ul>
+    </div>
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">
+        Chat with us!
+      </button>
+
+      <div class="content">
+        <div class="full-chat-block">
+          <!-- Message Container -->
+          <div class="outer-container">
+            <div class="chat-container">
+              <!-- Messages -->
+              <div id="chatbox">
+                <h5 id="chat-timestamp"></h5>
+                <p id="botStarterMessage" class="botText">
+                  <!-- <span>Loading...</span> -->
+                </p>
+              </div>
+
+              <!-- User input box -->
+              <div class="chat-bar-input-block">
+                <div id="userInput">
+                  <input
+                    id="textInput"
+                    class="input-box"
+                    type="text"
+                    name="msg"
+                    placeholder="Write a message"
+                  />
+                  <p></p>
+                </div>
+
+                <div class="chat-bar-button">
+                  <button type="button" id="sendButton" onclick="sendButton()">
+                    Send
+                  </button>
+                </div>
+              </div>
+
+              <div id="chat-bar-bottom">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        </div>
+  </body>
+  <script src="chat.js"></script>
+  <script src="responses.js"></script>
+</html>
